@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+    <!--css sayfasına bağladım-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--fonts link-->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <!--googlefonts tan link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Fontawesome kütüphanesinden herhangibir içeriği kullanabilmek için bağlantı-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Oxygen:wght@300&family=Teko:wght@700&display=swap" rel="stylesheet"> <!--header yazı fontu-->
+
+</head>
+
+<body>
+    <div id="social">
+        <font>SOFTWARE | <span> "İnsanlar, yazılımın ürün olmadığını, ürün üretmek için kullanıldığını anlayacaklar."
+                Linus Torvalds
+            </span></font>
+        <!--font etiketi html5 de yok css ile düzenlenebilir.-->
+
+
+        <i class="fas fa-search"></i>
+        <!--arama iconu-->
+        <i class="fab fa-facebook"></i>
+        <!--facebook iconu-->
+        <i class="fab fa-instagram"></i>
+        <!--inst iconu-->
+        <i class="fab fa-twitter"></i>
+        <!--twitter iconu-->
+        <i class="fab fa-google"></i>
+        <!--goole iconu-->
+    </div>
+
+    <div id="container">
+        <header>
+            <!--başlık kısmında olması gereken ögelerin gruplar-->
+            <img id="headerResim" src="img/planet2.jpg" alt="">
+            <div id="centered"><i>SOFTWARE</i></div>
+        </header>
+
+        <section>
+
+            <nav> <!--menu alanlarını <div class="id"></div> karmaşası ile tanımlamak yerine sadece <nav></nav> tagları arasında tanımlamamızı sağlıyor.-->
+
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Anasayfa</a></li> <!--i etiketi çindekiker icon-->
+                <li><a href="hakkimizda.html"><i class="fas fa-users"></i>Hakkımızda</a></li>
+                <li><a href="referanslar.html"><i class="fas fa-asterisk"></i>Referanslar</a></li>
+                <li><a href="galeri.html"><i class="fas fa-images"></i>Galeri</a></li>
+                <li><a href="iletisim.html"><i class="far fa-address-book"></i>İletişim</a></li>
+            </ul>
+          
+            </nav>
+            <!--class çoklu yansıtmalarda id tek etiketlerde kullanılır.-->
+            <main>
+                <div class="icerik">
+                    <img src="img/banner2.jpg" alt="" class="rsm">
+                    
+                    <h5>BAŞLIK</h5>
+
+                    <P class="icerikText">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusamus suscipit animi repellat. Fugit explicabo porro tempore suscipit quo reprehenderit! Debitis reiciendis quos dignissimos voluptatem itaque dolore porro nihil et.
+                    </P>
+
+                    <a href="#" class="btnDevam">Devamını Oku..</a>
+                </div>
+
+                <div class="icerik">
+                    <img src="img/banner3.jpg" alt="" class="rsm">
+                    
+                    <h5>BAŞLIK</h5>
+
+                    <P class="icerikText">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusamus suscipit animi repellat. Fugit explicabo porro tempore suscipit quo reprehenderit! Debitis reiciendis quos dignissimos voluptatem itaque dolore porro nihil et.
+                    </P>
+
+                    <a href="#" class="btnDevam">Devamını Oku..</a>
+                </div>
+
+                <div class="icerik">
+                    <img src="img/banner4.jpg" alt="" class="rsm">
+                    
+                    <h5>BAŞLIK</h5>
+
+                    <P class="icerikText">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusamus suscipit animi repellat. Fugit explicabo porro tempore suscipit quo reprehenderit! Debitis reiciendis quos dignissimos voluptatem itaque dolore porro nihil et.
+                    </P>
+
+                    <a href="#" class="btnDevam">Devamını Oku..</a>
+                </div>
+
+                <div class="icerik">
+                    <img src="img/banner.jpg" alt="" class="rsm">
+                    
+                    <h5>BAŞLIK</h5>
+
+                    <P class="icerikText">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusamus suscipit animi repellat. Fugit explicabo porro tempore suscipit quo reprehenderit! Debitis reiciendis quos dignissimos voluptatem itaque dolore porro nihil et.
+                    </P>
+
+                    <a href="#" class="btnDevam">Devamını Oku..</a>
+                </div>
+            </main>
+    <!--<main> etiketi bir belgenin ana içeriğini belirtir.
+
+<main> elementi içerisindeki içerik o belgeye özel olmalıdır. İçerisinde; yan menüler, navigasyon linkleri, telif hakkı bilgisi, site logoları ve arama formları gibi her sayfada tekrarlılık gösteren içerikler olmamalıdır.
+
+Not: Bir belgede birden fazla <main> elementi olmamalıdır. <main> elementi, <article> , <aside> , <footer> , <header> ya da <nav> elementlerinin alt elemanı olamaz.-->
+        </section>
+
+        <footer>Tüm Hakları saklıdır &copy;| 2021</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    /*diğer margin ve paddingler den etkilenmemek için.*/
+}
+
+body {
+    margin: 0%;
+    /*yazıları satfanın soluna yapıştırır */
+    padding: 0%;
+    background-color: #dbdbdb;
+    font-family: 'Oxygen', sans-serif;
+    /*yazı fontunun stili için siteden kopya*/
+}
+
+#social {
+    background-color: black;
+    color: white;
+    height: 55px;
+    width: 100%;
+    position: sticky;
+    /*En üstteki barı yukarı yapıştırır.*/
+    top: 0%;
+    /*Yukarıdan sıfır noktasına yapışsın.*/
+    z-index: 1;
+    /*Sayfa içeriğinde herhangibir şeyin sabit bar üzerine çıkmasını engeller.*/
+    font-size: 18px;
+    /*Barın içinin fontu*/
+    text-align: right;
+    /*iconları sağa yaslar*/
+    padding: 15px;
+    /*4 taraftan iç boşluk*/
+
+}
+
+/*Html sayfasında tek font etiketi kullandığımız için id ataması yapmadık.*/
+font {
+    float: left;
+    /*Sayfanın solundan git*/
+    letter-spacing: 2px;
+    /*Harflerin arassındaki boşluk*/
+}
+
+span {
+    /*linus T. sözü ayarları*/
+    font-size: 12px;
+    letter-spacing: 1px;
+
+}
+
+#social>i {
+    margin-right: 15px;
+    /*iconların boşlukları*/
+}
+
+#social>i:hover {
+    /* fare ile üzerine geldiğimizde iconun şeklini değiştirir.*/
+    opacity: 0.8;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    /*Gelecek içeriğe göre kendi yüksekliğini ayarlaayabilsin.*/
+
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+    /*Gölgelendirme yapar : yatay, dikey, bulanıklık dağıtma,renk*/
+    border-bottom-left-radius: 10px;
+    /*resmin kenarlarını ovalleştirir*/
+    border-bottom-right-radius: 10px;
+    position: relative;
+    color: white;
+    font-family: 'Comforter Brush', cursive;
+    /*yazı fontu font familylerin tamamı*/
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+    background-color: black;
+    /*yazı  net görünsün diye resmi şeffaflaştırıcam arkadaki renge göre yani siyah*/
+    margin-bottom: 5px;
+    /*menüyle arasına mesafe koyar.*/
+}
+
+#headerResim {
+    width: 100%;
+    /*header ı tamamen doldurur*/
+    height: 250px;
+    border-bottom-left-radius: 10px;
+    /*resmin kenarlarını ovalleştirir*/
+    border-bottom-right-radius: 10px;
+    opacity: 0.8;
+}
+
+#centered {
+    position: absolute;
+    /*header a göre konumlanacak*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*yüzdeyüz ortalamak için*/
+
+}
+
+section{   /*meenü ve içerik için*/
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15); /*gölge*/
+    margin-top: 15px; /*header ve marjin arasında boşluğu artırmak için*/
+    overflow: auto; /*nav etiketini section ın içine sığdırır.*/
+
+
+
+}
+nav{
+    width: 20%; /*conteiner ın %20 sini kaplar.*/
+    float: left;  /*Kendisinden sonraki İçerik altına değil yanına gelsin*/
+    margin-top: 10px;
+    height: auto;
+}
+
+nav ul{
+    width: auto;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+nav li{
+    list-style-type: none; /*liste elemanlarının başındaki noktaları siler-gömer*/    
+}
+
+nav li a{ /*etiketin defaultu altı çizili ve mavi bunu değiştirir.*/
+    height: 50px;
+    line-height: 50px; /*dikeyde ortalama yapmak için satır yüksekliğini de %50 verdik*/
+    text-decoration: none; /*alt çizgiyi kaldırır.*/
+    color: black;
+    border-bottom: 1px solid #b4b4b4;
+    padding-left: 20px;
+    display: block;
+}
+
+nav li a:hover{ /*etiketin üzerine gelindiğinde arkaplan ve yazı rengini değiştirmek için*/
+    color: white;
+    background-color: #adadad;
+}
+
+i{
+   margin-right: 10px; /*iconlara yazılarla arasına boşluk vermek için*/
+}
+
+main{
+    float: left; /*menünün sağına gelir(default u alt satırdır.). Yani solda kalır*/
+    height: auto;
+    width: 80%; /*Menüye %20 vermiştik o yüzden %80 kaldı*/
+    padding: 10px;
+}
+.icerik{
+    width: 48%; /*arada padding payını göz önüne aldık. %50 olsaydı resimler arasında boşuk kalmazdı.*/
+    height: auto;
+    display: inline-block; /*direkt block yapsaydık alt alta gelirlerdi.Şimdi aynı satırda block un özelliğini de içerir.*/
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15); /*gölge*/
+    margin-bottom: 15px; /*alt alta gelen resimler arasında boşluk bırakmak için*/
+    
+
+}
+
+.rsm{
+    width: 100%; /*içinde bulunduğu etikete göre genişliği ayarlar.*/
+    border-top-left-radius: 10px;  /*resmin üst köşeleri için*/
+    border-top-right-radius: 10px;  /*resmin üst köşeleri için*/
+    transition: opacity 0.8s; /*opacity e düşüş 0.8 saniyede gerçekleşir.*/
+}
+
+.rsm:hover{
+    opacity: 0.6; /*resmin üzerine gelindiğinde opaklığı düşer.*/
+}
+h5{
+    margin: 10px;
+    color: dimgray;
+}
+.icerikText{
+    margin: 10px; /*4 bir yandan text in dış boşluğunu ayarlar.*/
+    color: dimgray;
+}
+
+.btnDevam:link{    /*tıklanmamış linkken burdaki özelliklerin ne olacağını belirler.*/
+    display: block;
+    width: 150px;;
+    height: 45px;
+    padding: 10px 20px;
+    background-color: #009ece;
+    color: white;
+    text-decoration: none;  /*butonun alt çizgisini kaldırmak için*/
+    margin: 15px;
+    border-radius: 7px;
+}
+
+.btnDevam:hover{
+    opacity: 0.8; /*Butonun üzerine gelindiğindeki renk değişimini verir.*/
+}
+
+footer{
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    color: white;
+    line-height: 75px;  /*dikeyde hizalama için*/
+    text-align: center; /*yatayda hizalama için*/
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15); /*gölge*/
+}
+
+h1{       /*Hakkımızda sayfasının h1 i*/
+    text-align: center; /*yazıyı ortalar*/
+    background-color: black;
+    color: white;
+    height: 50px;
+    line-height: 50px; /*yüksekliği 50 px verdiğimiz için dikeyde ortalamak için bunu kullandık.*/
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+
+}
+
+#hakkimizdaRSM{
+    width: 350px;
+    height: 300px;
+    float: left; /*soldan akış*/
+    border-radius: 10px;
+    margin: 25px;
+    margin-bottom: 5px;
+    transition: 0.8s;
+}
+
+#hakkimizdaRSM:hover{
+    opacity: 0.6;
+}
+
+.hakYazi {
+    margin-right: 15px;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 40px; /*Paragrafın ilk satırını içe doğru öteler. Paragraf başı yani.*/
+    color: #494949;
+
+}
