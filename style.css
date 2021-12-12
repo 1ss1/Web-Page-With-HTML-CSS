@@ -273,7 +273,7 @@ h1{       /*Hakkımızda sayfasının h1 i*/
     border-top-right-radius: 5px;
     margin: 0;
     opacity: 0.6; /*resim ilk etapta soluk olacak.*/
-    transition: opacity 0.8s;
+    transition: opacity 0.9s;
 }
 
 .refResim:hover{
